@@ -1,0 +1,17 @@
+name: colour uploaded
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  poster-check:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v3
+
+      - name: Confirm poster upload
+        run: echo "Poster Updated Successfully 🎉"
